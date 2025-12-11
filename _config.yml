@@ -1,4 +1,5 @@
 theme: jekyll-theme-slate
 title: My Price Log
 description: Track and compare prices at local shops, offline.
-url: https://github.com/ZornsLemma/my-price-log
+github:
+  repository_url: https://github.com/ZornsLemma/my-price-log
