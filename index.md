@@ -12,7 +12,7 @@ This Android app helps you record prices of products at local stores and compare
 
 There's nothing particularly fancy or clever here. It's a very simple, specialised database with a user interface optimised for easy use when you're standing in a supermarket aisle with a basket or trolley.
 
-The app tracks how old each price is, so you won't be misled by out-of-date prices. Old prices are indicated by icons and a simplistic inflation adjustment is applied to try to keep them somewhat useful, although for best results you should update the prices yourself.
+The app tracks how old each price is, so you won't be misled by out-of-date prices. Old prices are indicated by icons and a simplistic inflation adjustment is applied to try to keep them somewhat useful, although for best results you should update the prices yourself. You can view the price history if you want to see how it has changed over time.
 
 The app will make a recommendation as to whether a price is good, OK or bad if it has enough information. A list of unit prices is also shown so you can decide for yourself.
 
