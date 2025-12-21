@@ -1,3 +1,7 @@
+[<img src="https://f-droid.org/badge/get-it-on.png"
+    alt="Get it on F-Droid"
+    height="80">](https://f-droid.org/packages/app.zornslemma.mypricelog)
+
 ## Overview
 
 This app helps you record prices of products at local stores and compare them. It works entirely offline:
