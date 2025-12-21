@@ -2,6 +2,8 @@
     alt="Get it on F-Droid"
     height="80">](https://f-droid.org/packages/app.zornslemma.mypricelog)
 
+# TODO TEST
+
 ## Overview
 
 This app helps you record prices of products at local stores and compare them. It works entirely offline:
@@ -14,13 +16,25 @@ There's nothing particularly fancy or clever here. It's a very simple, specialis
 
 ## Getting started
 
-When you first install the app, it will be populated with some demonstration data. This isn't realistic, but it lets you explore the app as it's meant to be used without having to first enter a load of stores, products and price data. Feel free to just play around; it's not as if this data is valuable.
+When you first install the app, it will be populated with some demonstration data. This isn't realistic, but it lets you explore the app as it's meant to be used without having to enter a load of data first. Feel free to just play around; it's not as if this data is valuable.
 
 ## Collections
 
-You can have as many "collections" as you like. Each of these is almost like a completely separate database - each collection has its own independent list of stores, products and prices. The demo data is placed in a collection called "Groceries (demo)" to keep it separate. When you want to start using the app for real, you will want to create your own collection.
+You can have as many collections as you like. Each of these is almost like a completely separate database - each collection has its own independent list of stores, products and prices. The demo data is placed in a collection called "Groceries (demo)" to keep it separate.
 
-You can switch between collections on the home screen using the hamburger menu at the top left at any time. The "Edit products" and "Edit stores" menu options in the triple dot "overflow" menu at the top right of the home screen operate only on the current collection.
+You can see the collections by tapping on the ☰ ("hamburger menu") at the top left. Tap a collection to make it the current collection. The current collection name is show at the top of the screen.
+
+When you want to start using the app for real, you will want to create your own collection. Tap on the ⋮ ("three dots menu") at the top right and choose "edit collections", then use the floating + button at the bottom right to add a new collection.
+
+![Top bar of the app's main screen showing the hamburger menu, current collection and three dots menu](assets/main-screen-top-bar.png)
+
+## Products and stores
+
+The "Edit products" and "Edit stores" menu options on three dots menu at the top right allow you to modify and add products and stores *to the current collection*.
+
+The current product and store are shown near the top of the app's main screen:
+
+![Product and Store fields on the app's main screen](assets/main-screen-product-and-store.png)
 
 ## Design philosophy
 
