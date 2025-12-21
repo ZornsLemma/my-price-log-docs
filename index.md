@@ -24,7 +24,7 @@ You can see the collections by tapping on the ☰ ("hamburger menu") at the top 
 
 When you want to start using the app for real, you will want to create your own collection. Tap on the ⋮ ("three dots menu") at the top right and choose "Edit collections", then use the floating + button at the bottom right to add a new collection. You can also tap on a collection to edit it, and from there you can use the "Delete collection" button to remove it.
 
-![Top bar of the app's main screen showing the hamburger menu, current collection and three dots menu](assets/main-screen-top-bar.png)
+<img src="assets/main-screen-top-bar.png" alt="Top bar of the app's main screen showing the hamburger menu, current collection and three dots menu" style="max-width: 100%; height: auto;">
 
 # Products and stores
 
@@ -32,7 +32,6 @@ The "Edit products" and "Edit stores" menu options on the three dots menu at the
 
 The current product and store are shown near the top of the app's main screen:
 
-![Product and Store fields on the app's main screen](assets/main-screen-product-and-store.png)
 <img src="assets/main-screen-product-and-store.png" alt="Product and Store fields on the app's main screen" style="max-width: 100%; height: auto;">
 
 Tap the "Product" field on the main screen to change the current product. This will open the product selection screen, where you can scroll through the list of products or search by typing in any part of the product name. You can also add new products here using the floating + button at the bottom right of the product selection screen.
