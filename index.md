@@ -33,6 +33,7 @@ The "Edit products" and "Edit stores" menu options on the three dots menu at the
 The current product and store are shown near the top of the app's main screen:
 
 ![Product and Store fields on the app's main screen](assets/main-screen-product-and-store.png)
+<img src="assets/main-screen-product-and-store.png" alt="Product and Store fields on the app's main screen" style="max-width: 100%; height: auto;">
 
 Tap the "Product" field on the main screen to change the current product. This will open the product selection screen, where you can scroll through the list of products or search by typing in any part of the product name. You can also add new products here using the floating + button at the bottom right of the product selection screen.
 
