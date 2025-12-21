@@ -54,7 +54,7 @@ You can also select a store by tapping on its row in the "Price comparison" pane
 
 The store price panel appears just below the "Store" field if there is a current store selected:
 
-<img src="assets/main-screen-store-price-card.png" alt="Store Price panel on the app's main screen" style="max-width: 100%; height: auto;">
+<img src="assets/main-screen-store-price-card.png" alt="Store price panel on the app's main screen" style="max-width: 100%; height: auto;">
 
 It shows information for the current product and store:
 * "Shelf price" is the basic price for this product as shown on the store shelf: a certain amount of money for a certain quantity of the product. This does not take any inflation adjustments or loyalty discounts into consideration.
@@ -70,6 +70,25 @@ The panel also allows this information to be updated:
 Tap on the ⋮ ("three dots menu") at the top right of this panel (not the screen) to open a menu which will let you:
 * View the history of the prices for this product and store.
 * Delete the price for this product and store. If you delete the price by accident, you can restore it from the view history screen.
+
+# Price comparison panel
+
+The price comparison panel appears at the bottom of the app's main screen:
+
+<img src="assets/main-screen-price-comparison-card.png" alt="Price comparison panel on the app's main screen" style="max-width: 100%; height: auto;">
+
+It shows the unit price for all the stores which have a price for the current product, sorted into ascending order so that the best price is at the top. /These prices take loyalty discounts and inflation adjustments for old prices into account./ This means that the unit price shown here may not match the unit price shown on the store price panel.
+
+The row for the currently selected store (SuperiorStore in this example) is highlighted. Tapping a row will make that store the current store, showing the details for that price in the store price panel.
+
+Icons may appear next to a unit price in this table:
+* A tick in a circle indicates a good price.
+* A horizontal line in a circle indicates an OK price.
+* A cross in a circle indicates a bad price.
+* An hourglass with the sand in the top half indicates a stale price (not confirmed for 30 days, by default).
+* An hourglass with the sand in the bottom half indicates an ancient price (not confirmed for 180 days, by default).
+
+Stale prices and ancient prices both have an inflation adjustment applied to them to try to keep them useful, although ideally you will update or confirm the price. Ancient prices are ignored when making price judgments.
 
 # Design philosophy
 
@@ -115,3 +134,5 @@ Although I have not tried to test it myself, I believe that on versions of Andro
 Please raise bug reports and suggestions for enhancements as issues at the [app's GitHub repository](https://github.com/ZornsLemma/my-price-log/issues).
 
 This app is open source and is freely available under the MIT license on GitHub.
+
+<!-- TODO: Include some graphics of the different icons and what they all mean - probably clip the icons from screenshots and put them with regular page text to describe them -->
