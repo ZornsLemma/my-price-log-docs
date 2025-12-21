@@ -77,7 +77,7 @@ The price comparison panel appears at the bottom of the app's main screen:
 
 <img src="assets/main-screen-price-comparison-card.png" alt="Price comparison panel on the app's main screen" style="max-width: 100%; height: auto;">
 
-It shows the unit price for all the stores which have a price for the current product, sorted into ascending order so that the best price is at the top. /These prices take loyalty discounts and inflation adjustments for old prices into account./ This means that the unit price shown here may not match the unit price shown on the store price panel.
+It shows the unit price for all the stores which have a price for the current product, sorted into ascending order so that the best price is at the top. *These prices take loyalty discounts and inflation adjustments for old prices into account.* This means that the unit price shown here may not match the unit price shown on the store price panel.
 
 The row for the currently selected store (SuperiorStore in this example) is highlighted. Tapping a row will make that store the current store, showing the details for that price in the store price panel.
 
