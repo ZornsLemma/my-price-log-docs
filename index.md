@@ -61,9 +61,10 @@ It shows information for the current product and store:
 * "Unit price" is the unit price for the product, calculated from the shelf price. You can change the unit by tapping on this field and choosing another from the menu. This only affects the display on this panel. Again, this does not take inflation or loyalty discounts into consideration.
 * "Confirmed" shows when the shelf price was last confirmed to be correct. This will appear in a different colour (typically some shade of red) if the price is considered old.
 * The price judgement ("OK price" in this example) will appear if there are at least three stores with relatively up-to-date prices for this product. It represents a simplistic automated judgement of the price at the current store compared to others.
+* "Notes" will be shown if you have entered a note on the edit price screen. This is not present in this example.
 
 The panel also allows this information to be updated:
-* "Edit" will open the edit price screen, where you can update the shelf price, view or edit a note about this product at this store and optionally confirm that the new price is current.
+* "Edit" will open the edit price screen, where you can update the shelf price, edit a note about the price and optionally confirm that the new price is current.
 * "Confirm" will immediately update the confirmed date to "now". Use this when you are in the store and can see that the shelf price is still correct. You could achieve the same result using "Edit", but this is quicker. After tapping "Confirm", it will turn into an "Undo" button temporarily - tap this to undo an accidental confirmation.
 
 Tap on the ⋮ ("three dots menu") at the top right of this panel (not the screen) to open a menu which will let you:
