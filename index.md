@@ -22,7 +22,7 @@ You can have as many collections as you like. Each of these is almost like a com
 
 You can see the collections by tapping on the ☰ ("hamburger menu") at the top left. Tap a collection to make it the current collection. The current collection name is shown at the top of the screen.
 
-When you want to start using the app for real, you will want to create your own collection. Tap on the ⋮ ("three dots menu") at the top right and choose "Edit collections", then use the floating + button at the bottom right to add a new collection. You can also tap on a collection to edit it, and from there you can use the "Delete collection" butotn to remove it.
+When you want to start using the app for real, you will want to create your own collection. Tap on the ⋮ ("three dots menu") at the top right and choose "Edit collections", then use the floating + button at the bottom right to add a new collection. You can also tap on a collection to edit it, and from there you can use the "Delete collection" button to remove it.
 
 ![Top bar of the app's main screen showing the hamburger menu, current collection and three dots menu](assets/main-screen-top-bar.png)
 
@@ -34,7 +34,7 @@ The current product and store are shown near the top of the app's main screen:
 
 ![Product and Store fields on the app's main screen](assets/main-screen-product-and-store.png)
 
-Tap the "Product" field on the main screen to change the current product. This will open the product selection screen, where you can scroll through a list of products or search by typing in any part of the product name. You can also add new products here using the floating + button at the bottom right of the product selection screen.
+Tap the "Product" field on the main screen to change the current product. This will open the product selection screen, where you can scroll through the list of products or search by typing in any part of the product name. You can also add new products here using the floating + button at the bottom right of the product selection screen.
 
 Tap the "Store" field on the main screen to change the current store. A menu will open allowing you to pick one. Choosing "None" will mean there is no current store, which hides the "Store price" panel. This might be useful because:
 * It frees up space on the screen so you can see more of the "Price comparison" panel.
