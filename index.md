@@ -62,7 +62,7 @@ It shows information for the current product and store:
 * "Confirmed" shows when the shelf price was last confirmed to be correct. This will appear in a different colour (typically some shade of red) if the price is considered old.
 * The price judgement ("OK price" in this example) will appear if there are at least three stores with relatively up-to-date prices for this product. It represents a simplistic automated judgement of the price at the current store compared to others.
 
-The store price panel allows the information to be updated:
+The panel also allows this information to be updated:
 * "Edit" will open the edit price screen, where you can update the shelf price, view or edit a note about this product at this store and optionally confirm that the new price is current.
 * "Confirm" will immediately update the confirmed date to "now". Use this when you are in the store and can see that the shelf price is still correct. You could achieve the same result using "Edit", but this is quicker. After tapping "Confirm", it will turn into an "Undo" button temporarily - tap this to undo an accidental confirmation.
 
