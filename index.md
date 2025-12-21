@@ -12,6 +12,14 @@ This app helps you record prices of products at local stores and compare them. I
 
 There's nothing particularly fancy or clever here. It's a very simple, specialised database with a user interface optimised for easy use when you're standing in a supermarket aisle with a basket or trolley.
 
+The app tracks how old each price is, so you won't be misled by out-of-date prices. Old prices are indicated by icons and a simplistic inflation adjustment is applied to try to keep them somewhat useful, although for best results you should update the prices yourself.
+
+The app will make a recommendation as to whether a price is good, OK or bad if it has enough information. Of course, you can view the actual list of unit prices and decide for yourself.
+
+Customer loyalty scheme discounts can be specified for each store and these will be used to adjust the unit price when making a comparison between stores.
+
+Unit conversions are handled automatically, both within and between measurement systems. Metric, imperial and US customary units are all supported.
+
 # Getting started
 
 When you first install the app, it will be populated with some demonstration data. This isn't realistic, but it lets you explore the app as it's meant to be used without having to enter a load of data first. Feel free to just play around; it's not as if this data is valuable.
