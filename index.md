@@ -4,7 +4,7 @@
 
 # Overview
 
-This app helps you record prices of products at local stores and compare them. It works entirely offline:
+This Android app helps you record prices of products at local stores and compare them. It works entirely offline:
 * You enter a list of stores.
 * You enter a list of products sold at those stores.
 * You enter, update and confirm the prices of those products at those stores as you shop.
