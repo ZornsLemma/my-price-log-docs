@@ -52,21 +52,23 @@ You can also select a store by tapping on its row in the "Price comparison" pane
 
 # Store price panel
 
+The store price panel appears just below the "Store" field if there is a current store selected:
+
 <img src="assets/main-screen-store-price-card.png" alt="Store Price panel on the app's main screen" style="max-width: 100%; height: auto;">
 
-It shows information for the current store, if there is one:
+It shows information for the current product and store:
 * "Shelf price" is the basic price for this product as shown on the store shelf: a certain amount of money for a certain quantity of the product. This does not take any inflation adjustments or loyalty discounts into consideration.
 * "Unit price" is the unit price for the product, calculated from the shelf price. You can change the unit by tapping on this field and choosing another from the menu. This only affects the display on this panel. Again, this does not take inflation or loyalty discounts into consideration.
 * "Confirmed" shows when the shelf price was last confirmed to be correct. This will appear in a different colour (typically some shade of red) if the price is considered old.
 * The price judgement ("OK price" in this example) will appear if there are at least three stores with relatively up-to-date prices for this product. It represents a simplistic automated judgement of the price at the current store compared to others.
 
-It also allows the information to be updated:
+The store price panel allows the information to be updated:
 * "Edit" will open the edit price screen, where you can update the shelf price, view or edit a note about this product at this store and optionally confirm that the new price is current.
-* "Confirm" will immediately update the confirmed date to "now". Use this when you are in the store and can see that the shelf price is still correct. You could achieve the same result using "Edit", but this is quicker. After tapping Confirm, it will turn into an "Undo" button temporarily - tap this to undo an accidental confirmation.
+* "Confirm" will immediately update the confirmed date to "now". Use this when you are in the store and can see that the shelf price is still correct. You could achieve the same result using "Edit", but this is quicker. After tapping "Confirm", it will turn into an "Undo" button temporarily - tap this to undo an accidental confirmation.
 
 Tap on the ⋮ ("three dots menu") at the top right of this panel (not the screen) to open a menu which will let you:
 * View the history of the prices for this product and store.
-* Delete the price for this product and store. If you delete the price by accident, you can restore it from within the history view.
+* Delete the price for this product and store. If you delete the price by accident, you can restore it from the view history screen.
 
 # Design philosophy
 
