@@ -2,9 +2,7 @@
     alt="Get it on F-Droid"
     height="80">](https://f-droid.org/packages/app.zornslemma.mypricelog)
 
-# TODO TEST
-
-## Overview
+# Overview
 
 This app helps you record prices of products at local stores and compare them. It works entirely offline:
 * You enter a list of stores.
@@ -14,29 +12,37 @@ This app helps you record prices of products at local stores and compare them. I
 
 There's nothing particularly fancy or clever here. It's a very simple, specialised database with a user interface optimised for easy use when you're standing in a supermarket aisle with a basket or trolley.
 
-## Getting started
+# Getting started
 
 When you first install the app, it will be populated with some demonstration data. This isn't realistic, but it lets you explore the app as it's meant to be used without having to enter a load of data first. Feel free to just play around; it's not as if this data is valuable.
 
-## Collections
+# Collections
 
 You can have as many collections as you like. Each of these is almost like a completely separate database - each collection has its own independent list of stores, products and prices. The demo data is placed in a collection called "Groceries (demo)" to keep it separate.
 
-You can see the collections by tapping on the ☰ ("hamburger menu") at the top left. Tap a collection to make it the current collection. The current collection name is show at the top of the screen.
+You can see the collections by tapping on the ☰ ("hamburger menu") at the top left. Tap a collection to make it the current collection. The current collection name is shown at the top of the screen.
 
-When you want to start using the app for real, you will want to create your own collection. Tap on the ⋮ ("three dots menu") at the top right and choose "edit collections", then use the floating + button at the bottom right to add a new collection.
+When you want to start using the app for real, you will want to create your own collection. Tap on the ⋮ ("three dots menu") at the top right and choose "Edit collections", then use the floating + button at the bottom right to add a new collection. You can also tap on a collection to edit it, and from there you can use the "Delete collection" butotn to remove it.
 
 ![Top bar of the app's main screen showing the hamburger menu, current collection and three dots menu](assets/main-screen-top-bar.png)
 
-## Products and stores
+# Products and stores
 
-The "Edit products" and "Edit stores" menu options on three dots menu at the top right allow you to modify and add products and stores *to the current collection*.
+The "Edit products" and "Edit stores" menu options on the three dots menu at the top right allow you to add, edit and delete products and stores *for the current collection*. As with collections, you can add products or stores using the floating + button at the bottom right. You can tap on a product or store to edit it, and from there you can use the "Delete" button to remove it.
 
 The current product and store are shown near the top of the app's main screen:
 
 ![Product and Store fields on the app's main screen](assets/main-screen-product-and-store.png)
 
-## Design philosophy
+Tap the "Product" field on the main screen to change the current product. This will open the product selection screen, where you can scroll through a list of products or search by typing in any part of the product name. You can also add new products here using the floating + button at the bottom right of the product selection screen.
+
+Tap the "Store" field on the main screen to change the current store. A menu will open allowing you to pick one. Choosing "None" will mean there is no current store, which hides the "Store price" panel. This might be useful because:
+* It frees up space on the screen so you can see more of the "Price comparison" panel.
+* It makes it harder to tap the controls on the "Store price" panel by accident.
+
+You can also select a store by tapping on its row in the "Price comparison" panel.
+
+# Design philosophy
 
 Is "design philosophy" a bit pretentious? Sorry, I wasn't sure what else to call it.
 
@@ -55,11 +61,11 @@ This is a very simplistic way of representing the price data, but in practice I 
 
 The app is not intended to allow you to gather an objective and detailed history of prices for everything you buy. Its purpose is to assist you by remembering prices and whether those prices are recent ones or not.
 
-## Settings
+# Settings
 
 The Settings option on the triple dot "overflow" menu at the top right of the home screen brings up the Settings screen. These settings apply to all collections; each collection does not have separate settings.
 
-## Backup and restore
+# Backup and restore
 
 Unless you have some other means of backing up your phone as a whole and have tested it works with this app's data, you are strongly advised to periodically use the Settings->Backup option to export your data to a file *and copy the file off your phone so you don't lose it if your phone is lost, stolen or damaged*.
 
@@ -75,7 +81,7 @@ The app is still new and I suggest you perform additional verification of the ba
 
 Although I have not tried to test it myself, I believe that on versions of Android with "Auto Backup for Apps", this app's data may be included in the cloud backup. I have not taken steps to prevent this, since I understand it is opt-in and may be a worthwhile security/privacy trade-off for some people. As this is completely untested, please be very careful before relying on this to keep a useful backup - I strongly suggest you follow the manual backup process described above as well.
 
-## Feedback
+# Feedback
 
 Please raise bug reports and suggestions for enhancements as issues at the [app's GitHub repository](https://github.com/ZornsLemma/my-price-log/issues).
 
