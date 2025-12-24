@@ -1,6 +1,9 @@
 [<img src="https://f-droid.org/badge/get-it-on.png"
     alt="Get it on F-Droid"
     height="80">](https://f-droid.org/packages/app.zornslemma.mypricelog)
+[<img src="badge_obtainium.png"
+    alt="Get it with Obtainium"
+    height="80">](obtainium://add/https://github.com/ZornsLemma/my-price-log/releases)
 
 # Overview
 
