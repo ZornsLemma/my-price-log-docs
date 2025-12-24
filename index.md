@@ -8,7 +8,7 @@
         height="80">
 </a>
 -->
-[<img src="https://raw.githubusercontent.com/ImranR98/Obtainium/main/assets/graphics/badge_obtainium.png" 
+[<img src="assets/badge-obtainium.png" 
     alt="Get it on Obtainium" 
     style="height:80px; vertical-align:middle;">](https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/{%22id%22:%22app.zornslemma.mypricelog%22,%22url%22:%22https://github.com/ZornsLemma/my-price-log/releases%22})
 
