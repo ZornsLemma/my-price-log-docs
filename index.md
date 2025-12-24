@@ -7,6 +7,11 @@
 [<img src="https://raw.githubusercontent.com/ImranR98/Obtainium/main/assets/graphics/badge_obtainium.png"
     alt="Get it on Obtainium"
     height="80">](https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/{"id": "app.zornslemma.mypricelog", "url": "https://github.com/ZornsLemma/my-price-log/release"})
+[<a href="https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/{%22id%22:%22app.zornslemma.mypricelog%22,%22url%22:%222https://github.com/ZornsLemma/my-price-log/release%22}">)
+<img src="https://raw.githubusercontent.com/ImranR98/Obtainium/main/assets/graphics/badge_obtainium.png"
+    alt="Get it on Obtainium"
+    height="80">
+    </a>
 <!--                    <a href="
 https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/{%22id%22:%22chat.delta%22,%22url%22:%22https://github.com/deltachat/deltachat-android%22,%22author%22:%22Delta%20Chat%20Contributors%22,%22name%22:%22Delta%20Chat%22,%22additionalSettings%22:%22{\%22about\%22:\%22Decentralized%20private%20messenger%20with%20chat-shared%20tools%20and%20games.\%22}%22}
 
