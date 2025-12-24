@@ -1,9 +1,9 @@
 <div style="display:flex; gap:82px; align-items:center;">
     <a href="https://f-droid.org/packages/app.zornslemma.mypricelog">
-        <img src="assets/badge-f-droid.png">
+        <img src="assets/badge-f-droid.png" height="80">
     </a>
     <a href="https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/{%22id%22:%22app.zornslemma.mypricelog%22,%22url%22:%22https://github.com/ZornsLemma/my-price-log/releases%22}">
-        <img src="assets/badge-obtainium.png">
+        <img src="assets/badge-obtainium.png" height="80">
     </a>
 </div>
 
