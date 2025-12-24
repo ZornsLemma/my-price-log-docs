@@ -7,7 +7,7 @@
 [<img src="https://raw.githubusercontent.com/ImranR98/Obtainium/main/assets/graphics/badge_obtainium.png"
     alt="Get it on Obtainium"
     height="80">](https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/{"id": "app.zornslemma.mypricelog", "url": "https://github.com/ZornsLemma/my-price-log/release"})
-<a href="https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/{%22id%22:%22app.zornslemma.mypricelog%22,%22url%22:%222https://github.com/ZornsLemma/my-price-log/release%22}">)
+<a href="https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/{%22id%22:%22app.zornslemma.mypricelog%22,%22url%22:%22https://github.com/ZornsLemma/my-price-log/release%22}">)
 <img src="https://raw.githubusercontent.com/ImranR98/Obtainium/main/assets/graphics/badge_obtainium.png"
     alt="Get it on Obtainium"
     height="80">
