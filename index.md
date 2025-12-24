@@ -10,7 +10,7 @@
 -->
 [<img src="https://raw.githubusercontent.com/ImranR98/Obtainium/main/assets/graphics/badge_obtainium.png" 
     alt="Get it on Obtainium" 
-    height=80">](https://foo)
+    height="80">](https://foo)
 
 
 # Overview
