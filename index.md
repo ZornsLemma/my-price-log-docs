@@ -1,6 +1,6 @@
 [<img src="https://f-droid.org/badge/get-it-on.png"
     alt="Get it on F-Droid"
-    height="80">](https://f-droid.org/packages/app.zornslemma.mypricelog)
+    style="height:80px; vertical-align:middle;">](https://f-droid.org/packages/app.zornslemma.mypricelog)
     <!--
 <a href="https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/{%22id%22:%22app.zornslemma.mypricelog%22,%22url%22:%22https://github.com/ZornsLemma/my-price-log/releases%22}">
     <img src="https://raw.githubusercontent.com/ImranR98/Obtainium/main/assets/graphics/badge_obtainium.png"
@@ -10,7 +10,7 @@
 -->
 [<img src="https://raw.githubusercontent.com/ImranR98/Obtainium/main/assets/graphics/badge_obtainium.png" 
     alt="Get it on Obtainium" 
-    height="80">](https://foo)
+    style="height:80px; vertical-align:middle;">](https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/{%22id%22:%22app.zornslemma.mypricelog%22,%22url%22:%22https://github.com/ZornsLemma/my-price-log/releases%22})
 
 
 # Overview
