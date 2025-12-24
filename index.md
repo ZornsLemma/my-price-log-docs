@@ -1,4 +1,4 @@
-<div style="display:inline-flex; gap:82px;">
+<div style="display:flex; gap:82px; justify-content:flex-start; align-items:center;">
   <a href="https://f-droid.org/packages/app.zornslemma.mypricelog" style="display:inline-block; width:auto;">
     <img src="assets/badge-f-droid.png" height="80">
   </a>
