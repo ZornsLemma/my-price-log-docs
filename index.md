@@ -24,6 +24,33 @@ Unit conversions are handled automatically, both within and between measurement 
 
 When you first install the app, it will be populated with some demonstration data. This isn't realistic, but it lets you explore the app as it's meant to be used without having to enter a load of data first. Feel free to just play around; it's not as if this data is valuable.
 
+# Basic concepts
+<!-- TODO WIP -->
+
+There's obviously nothing inherently tricky in the concept of comparing unit prices for a product across stores. In theory we just take the current price/pack size of the product at each store, calculate the unit price and pick the lowest. The problem is that because the prices in the app come from you entering them when you visit the store, we don't *know* the actual current price and have to make do with the possibly outdated price from the last time you updated it. We effectively need to predict the present from the limited data we have about the past.
+
+It would not be practical or sensible to attempt to predict in any kind of detail. We have a handful of data points, prices move in response to all sorts of external events we have no way to model and which can't be captured usefully by any external statistics you could reasonably be expected to type in. Offers and promotions at individual stores likely overwhelm any larger market trends in practice over the short timeframes involved.
+
+The approach taken by the app is to track how recent a price is and make that information visible to you. Every price for every product at every store has a "confirmed at" date: the last date the price was known to be correct. If you just entered a price for the first time or updated the price after noticing it changed, the confirmed at date is today. You are encouraged to also "confirm" a price (which sets the confirmed at date to today) if you notice that the price is unchanged on a subsequent visit to the store.
+
+The app shows the confirmed at date as a relative time ("today", "3 days ago") when showing a price. It also categorises prices as:
+* fresh (confirmed <=30 days ago)
+* stale (confirmed >30 days ago and <=180 days ago)
+* ancient (confirmed >180 days ago)
+and shows these catgories instead of the precise age in some places. (30 and 180 days are the somewhat arbitrary defaults and can be adjusted to suit your personal tastes and local price stability.)
+
+If you're in store A and foozles cost $3/kg with absolute certainty - you can see it on the shelf in front of you - you should update/confirm the price in the app to reflect that. The app might show that foozles are $2/kg in store B but that price is a month old. Only you can decide if that price is likely to still be valid and whether it's worth going to store B for your foozles on the offchance they are still cheaper than store A. If you do go, you should update/confirm the price once you get there, whatever it is. But you may have had an otherwise wasted trip in terms of obtaining foozles if they are now $4/kg at store B.
+
+The likely long term pattern of using the app is that you imperfectly update and confirm prices across multiple visits to stores over time. You won't update or confirm every price for every product every time you visit a store, but you'll happen to notice things and make relatively casual updates. You'll have a fuzzy but valuable collection of recent-ish prices, and when you want to buy something, you'll be able to buy it at a relatively good price even if you could have got it somewhere else cheaper. ("Foozles are $2.31/kg here. I can see from the app they were $2.27/kg at that other store last month, but that's close enough, I'm going to just buy them here. Next time I'm in that other store I'll check the price so I know for future purchases.")
+
+The app applies a very weak concept of "inflation" to stale and ancient prices. We are not trying to predict the future from the present or analyse historical patterns; we are attempting very crudely to predict the present from the limited outdated information we have. The actual price exists out there in the world with 100% certainty; we just don't know what it is, unless you are willing to go visit the store and check. Inflation in the app should be viewed more as an "uncertainty penalty" applied to old prices. Imagine an escaped prisoner - their location was known absolutely at the last head count, but as time passes the radius of the area they could be in grows according to their estimated speed.
+
+Inflation in the app has only the loosest connection to headline inflation figures. It should probably be set on the high side - perhaps double the most pessimistic inflation figure reported would be a reasonable starting point? It should perhaps be called "staleness penalty" but using the word inflation makes the way it works more obvious, even as it invites misleading comparisons with headline inflation figures.
+
+The stale price threshold (30 days by default) is effectively the definition of how long you regard a price as "reasonably likely to remain about the same" after you last saw it. The ancient price threshold (180 days) is effectively the definition of when you regard a price as almost without any connection to reality; if you are seeing an ancient price, you might want to delete it to just remove it from the app, or make a special effort to visit the store to update/confirm it.
+
+The app will sometimes offer basic automated judgements on whether prices are good/OK/bad. These are inevitably crude and you should use your own judgement to supplement them. Ancient prices are completely ignored when making these judgements.
+
 # Collections
 
 You can have as many collections as you like. Each of these is almost like a completely separate database - each collection has its own independent list of stores, products and prices. The demo data is placed in a collection called "Groceries (demo)" to keep it separate.
@@ -128,6 +155,18 @@ The app is still new and I suggest you perform additional verification of the ba
 * Open the file and see if you can spot recent changes. For example, if you recently added a new product, see if you can see it in the item table.
 
 Although I have not tried to test it myself, I believe that on versions of Android with "Auto Backup for Apps", this app's data may be included in the cloud backup. I have not taken steps to prevent this, since I understand it is opt-in and may be a worthwhile security/privacy trade-off for some people. As this is completely untested, please be very careful before relying on this to keep a useful backup - I strongly suggest you follow the manual backup process described above as well.
+
+# Price classification summary
+<!-- TODO WIP -->
+
+Here's a summary of how a price's age (how long since it was last updated/confirmed) affect the app's behaviour:
+
+| | Fresh price (confirmed <=30 days ago)| Stale price (confirmed between 30 and 180 days ago) | Ancient price (confirmed >180 days ago) |
+|:--- | :----|:----|:-----------|
+| Icon in price comparison list |  No | Yes ("top hourglass") | Yes ("bottom hourglass", warning colour)
+| Inflation adjustment applied | No  | Yes | Yes |
+| Taken into account for price good/OK/bad recommendations  |Yes | Yes (after inflation adjustment) | No |
+
 
 # Feedback
 
