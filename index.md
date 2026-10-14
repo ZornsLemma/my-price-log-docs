@@ -37,7 +37,8 @@ The app shows the confirmed at date as a relative time ("today", "3 days ago") w
 * fresh (confirmed <=30 days ago)
 * stale (confirmed >30 days ago and <=180 days ago)
 * ancient (confirmed >180 days ago)
-and shows these catgories instead of the precise age in some places. (30 and 180 days are the somewhat arbitrary defaults and can be adjusted to suit your personal tastes and local price stability.)
+
+and shows these categories instead of the precise age in some places. (30 and 180 days are the somewhat arbitrary defaults and can be adjusted to suit your personal tastes and local price stability.)
 
 If you're in store A and foozles cost $3/kg with absolute certainty - you can see it on the shelf in front of you - you should update/confirm the price in the app to reflect that. The app might show that foozles are $2/kg in store B but that price is a month old. Only you can decide if that price is likely to still be valid and whether it's worth going to store B for your foozles on the offchance they are still cheaper than store A. If you do go, you should update/confirm the price once you get there, whatever it is. But you may have had an otherwise wasted trip in terms of obtaining foozles if they are now $4/kg at store B.
 
@@ -159,7 +160,7 @@ Although I have not tried to test it myself, I believe that on versions of Andro
 # Price classification summary
 <!-- TODO WIP -->
 
-Here's a summary of how a price's age (how long since it was last updated/confirmed) affect the app's behaviour:
+Here's a summary of how a price's age (how long since it was last updated/confirmed) affects the app's behaviour:
 
 | | Fresh price (confirmed <=30 days ago)| Stale price (confirmed between 30 and 180 days ago) | Ancient price (confirmed >180 days ago) |
 |:--- | :----|:----|:-----------|
