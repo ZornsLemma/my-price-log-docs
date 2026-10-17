@@ -25,7 +25,6 @@ Unit conversions are handled automatically, both within and between measurement 
 When you first install the app, it will be populated with some demonstration data. This isn't realistic, but it lets you explore the app as it's meant to be used without having to enter a load of data first. Feel free to just play around; it's not as if this data is valuable.
 
 # Basic concepts
-<!-- TODO WIP -->
 
 There's obviously nothing inherently tricky in the concept of comparing unit prices for a product across stores. In theory we just take the current price/pack size of the product at each store, calculate the unit price and pick the lowest. The problem is that because the prices in the app come from you entering them when you visit the store, we don't *know* the actual current price and have to make do with the possibly outdated price from the last time you updated it. We effectively need to predict the present from the limited data we have about the past.
 
@@ -46,7 +45,9 @@ The likely long term pattern of using the app is that you imperfectly update and
 
 The app applies a very weak concept of "inflation" to stale and ancient prices. We are not trying to predict the future from the present or analyse historical patterns; we are attempting very crudely to predict the present from the limited outdated information we have. The actual price exists out there in the world with 100% certainty; we just don't know what it is, unless you are willing to go visit the store and check. Inflation in the app should be viewed more as an "uncertainty penalty" applied to old prices. Imagine an escaped prisoner - their location was known absolutely at the last head count, but as time passes the radius of the area they could be in grows according to their estimated speed.
 
-Inflation in the app has only the loosest connection to headline inflation figures. It should probably be set on the high side - perhaps double the most pessimistic inflation figure reported would be a reasonable starting point? It should perhaps be called "staleness penalty" but using the word inflation makes the way it works more obvious, even as it invites misleading comparisons with headline inflation figures.
+The inflation rate defaults to 5% and can be changed in settings; it is not something the app derives from an analysis of price changes.
+
+Inflation in the app has only the loosest connection to headline inflation figures. It should probably be set on the high side - perhaps double the most pessimistic inflation figure reported would be a reasonable starting point? It should perhaps be called "staleness penalty" but using the word inflation makes the way it works more obvious, even as it invites misleading comparisons with headline inflation figures. 
 
 The stale price threshold (30 days by default) is effectively the definition of how long you regard a price as "reasonably likely to remain about the same" after you last saw it. The ancient price threshold (180 days) is effectively the point beyond which you regard a price as too old to be a useful indicator of the current price. If you see an ancient price, you might want to delete it from the app, or make a special effort to visit the store to update/confirm it. (The presence of an ancient price does at least indicate to you that the store sold that product in the past and may still sell it.)
 
@@ -116,7 +117,17 @@ Icons may appear next to a unit price in this table:
 * An hourglass with the sand in the top half indicates a stale price (not confirmed for 30 days, by default).
 * An hourglass with the sand in the bottom half indicates an ancient price (not confirmed for 180 days, by default).
 
+## Price classification
+
 Stale prices and ancient prices both have an inflation adjustment applied to them to try to keep them useful, although ideally you will update or confirm the price. Ancient prices are ignored when making price judgments.
+
+Here's a table showing the ways a price's age (how long since it was last updated/confirmed) affects the app's behaviour:
+
+| | Fresh price (confirmed <=30 days ago)| Stale price (confirmed between 30 and 180 days ago) | Ancient price (confirmed >180 days ago) |
+|:--- | :----|:----|:-----------|
+| Hourglass icon in price comparison list |  No | Yes ("top hourglass") | Yes ("bottom hourglass", warning colour)
+| Inflation adjustment applied | No  | Yes | Yes |
+| Taken into account for price good/OK/bad recommendations  |Yes | Yes (after inflation adjustment) | No |
 
 # Design philosophy
 
@@ -156,18 +167,6 @@ The app is still new and I suggest you perform additional verification of the ba
 * Open the file and see if you can spot recent changes. For example, if you recently added a new product, see if you can see it in the item table.
 
 Although I have not tried to test it myself, I believe that on versions of Android with "Auto Backup for Apps", this app's data may be included in the cloud backup. I have not taken steps to prevent this, since I understand it is opt-in and may be a worthwhile security/privacy trade-off for some people. As this is completely untested, please be very careful before relying on this to keep a useful backup - I strongly suggest you follow the manual backup process described above as well.
-
-# Price classification summary
-<!-- TODO WIP -->
-
-Here's a summary of how a price's age (how long since it was last updated/confirmed) affects the app's behaviour:
-
-| | Fresh price (confirmed <=30 days ago)| Stale price (confirmed between 30 and 180 days ago) | Ancient price (confirmed >180 days ago) |
-|:--- | :----|:----|:-----------|
-| Icon in price comparison list |  No | Yes ("top hourglass") | Yes ("bottom hourglass", warning colour)
-| Inflation adjustment applied | No  | Yes | Yes |
-| Taken into account for price good/OK/bad recommendations  |Yes | Yes (after inflation adjustment) | No |
-
 
 # Feedback
 
